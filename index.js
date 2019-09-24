@@ -7,6 +7,9 @@ const App = () => {
   const increamentcounter = (e)=>{
     setCounter(counter + 1);
   }
+  useEffect(()=>{
+    console.log("Working");
+  });
   return (
     <React.Fragment>
     <h1>Hello {counter} </h1>
