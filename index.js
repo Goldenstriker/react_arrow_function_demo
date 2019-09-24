@@ -3,7 +3,16 @@ import { render } from 'react-dom';
 import './style.css';
 
 const App = () => {
-  return (<h1>Hello</h1>);
+  const [counter,setCounter] = useState(0);
+  const increamentcounter = (e)=>{
+    setCounter(e.target.value);
+  }
+  return (
+    <React.Fragment>
+    <h1>Hello {counter} </h1>
+    <input type="button" onClick={increamentcounter} value="Click"/>
+    </React.Fragment>
+    );
 };
 export default App;
 render(<App />, document.getElementById('root'));
