@@ -5,7 +5,7 @@ import './style.css';
 const App = () => {
   const [counter,setCounter] = useState(0);
   const increamentcounter = (e)=>{
-    setCounter(e.target.value);
+    setCounter(counter + 1);
   }
   return (
     <React.Fragment>
